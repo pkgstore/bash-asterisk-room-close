@@ -1,4 +1,4 @@
-#!/usr/bin/env -S bash -e
+#!/bin/bash
 #
 # Asterisk script for closing room.
 # If there is only 1 user left in the room, the room is closed.
