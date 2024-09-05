@@ -33,7 +33,7 @@ run() { close; }
 
 close() {
   for room in "${rooms[@]}"; do
-    for phone in "${phones[@]}"; do
+    for phone in "${phones[@]:?}"; do
       users=$( asterisk -x "meetme list ${room}" | head -n -1 | awk '{ print NR }' )
       last=$( asterisk -x "meetme list ${room}" | grep "${phone}" | awk '{ print $4 }' )
 
