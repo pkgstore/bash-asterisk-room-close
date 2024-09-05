@@ -18,7 +18,7 @@ SRC_NAME="$(basename "$(readlink -f "${BASH_SOURCE[0]}")")" # Source name.
 . "${SRC_DIR}/${SRC_NAME%.*}.ini" # Loading configuration data.
 
 # Variables.
-mapfile -t rooms < <( grep '^conf =>' '/etc/asterisk/meetme.conf' | cut -d ' ' -f '3' )
+mapfile -t rooms < <( grep '^conf =>' '/etc/asterisk/meetme.conf' | cut -d ' ' -f 3 )
 
 # -------------------------------------------------------------------------------------------------------------------- #
 # INITIALIZATION
