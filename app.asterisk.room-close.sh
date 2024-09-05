@@ -6,7 +6,7 @@
 # @package    Bash
 # @author     Yuri Dunaev
 # @license    MIT
-# @version    1.0.0
+# @version    0.0.1
 # @link       https://***REMOVED***/asterisk/asterisk-room-close
 # -------------------------------------------------------------------------------------------------------------------- #
 
