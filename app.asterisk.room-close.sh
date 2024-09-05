@@ -12,11 +12,10 @@
 
 (( EUID != 0 )) && { echo >&2 'This script should be run as root!'; exit 1; }
 
-# Settings.
+# Sources.
 SRC_DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd -P ) # Source directory.
 SRC_NAME="$(basename "$(readlink -f "${BASH_SOURCE[0]}")")" # Source name.
 . "${SRC_DIR}/${SRC_NAME%.*}.ini" # Loading configuration data.
-
 
 # Variables.
 mapfile -t rooms < <( grep '^conf =>' '/etc/asterisk/meetme.conf' | cut -d ' ' -f '3' )
