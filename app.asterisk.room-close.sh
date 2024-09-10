@@ -7,7 +7,7 @@
 # @author     Yuri Dunaev
 # @license    MIT
 # @version    0.0.1
-# @link       https://***REMOVED***/asterisk/asterisk-room-close
+# @link       https://fdn.im
 # -------------------------------------------------------------------------------------------------------------------- #
 
 (( EUID != 0 )) && { echo >&2 'This script should be run as root!'; exit 1; }
