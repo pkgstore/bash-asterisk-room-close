@@ -33,8 +33,8 @@ run() { close; }
 close() {
   for room in "${rooms[@]}"; do
     for phone in "${phones[@]:?}"; do
-      users=$( asterisk -x "meetme list ${room}" | head -n -1 | awk '{ print NR }' )
-      last=$( asterisk -x "meetme list ${room}" | grep "${phone}" | awk '{ print $4 }' )
+      local users; users=$( asterisk -x "meetme list ${room}" | head -n -1 | awk '{ print NR }' )
+      local last; last=$( asterisk -x "meetme list ${room}" | grep "${phone}" | awk '{ print $4 }' )
 
       case ${users} in
         1) [[ ${phone} -eq ${last} ]] && asterisk -x "meetme kick ${room} all" ;;
