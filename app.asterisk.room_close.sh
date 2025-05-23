@@ -4,7 +4,7 @@
 # If there is only 1 user left in the room, the room is closed.
 # -------------------------------------------------------------------------------------------------------------------- #
 # @package    Bash
-# @author     Kai Kimera
+# @author     Kai Kimera <mail@kai.kim>
 # @license    MIT
 # @version    0.1.0
 # @link       https://lib.onl/ru/2024/10/0a633c87-935c-54ba-bedf-9c95152b6b51/
