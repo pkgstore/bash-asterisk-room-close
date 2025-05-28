@@ -45,4 +45,6 @@ function close() {
   done
 }
 
-function main() { close; }; main "$@"
+function main() {
+  close
+}; main "$@"
