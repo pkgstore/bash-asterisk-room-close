@@ -32,7 +32,7 @@ mapfile -t ROOMS < <( grep '^conf =>' '/etc/asterisk/meetme.conf' | cut -d ' ' -
 # -----------------------------------------------------< SCRIPT >----------------------------------------------------- #
 # -------------------------------------------------------------------------------------------------------------------- #
 
-function close() {
+function room_close() {
   for room in "${ROOMS[@]}"; do
     for phone in "${PHONES[@]}"; do
       local users; users="$( asterisk -x "meetme list ${room}" | head -n -1 | awk '{ print NR }' )"
@@ -46,5 +46,5 @@ function close() {
 }
 
 function main() {
-  close
+  room_close
 }; main "$@"
