@@ -8,12 +8,6 @@ A script to close an Asterisk conference room if 1 user with a certain phone num
 curl -sL 'https://raw.githubusercontent.com/pkgstore/bash-install/refs/heads/main/install.sh' | bash -s -- '/root/apps/asterisk' 'bash-asterisk-room-close' 'main'
 ```
 
-## Update
-
-```bash
-curl -sL 'https://raw.githubusercontent.com/pkgstore/bash-install/refs/heads/main/install.sh' | bash -s -- '/root/apps/asterisk' 'bash-asterisk-room-close' 'main' 'update'
-```
-
 ## Resources
 
 - [Documentation (RU)](https://lib.onl/ru/2024/10/0a633c87-935c-54ba-bedf-9c95152b6b51/)
