@@ -1,0 +1,16 @@
+{
+  "file": [
+    {
+      "name": "app.asterisk_room_close.conf",
+      "path": "/root/apps/asterisk"
+    },
+    {
+      "name": "app.asterisk_room_close.sh",
+      "path": "/root/apps/asterisk"
+    },
+    {
+      "name": "job.asterisk_room_close",
+      "path": "/root/apps/asterisk"
+    }
+  ]
+}
